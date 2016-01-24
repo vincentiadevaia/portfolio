@@ -1,24 +1,24 @@
-
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<!-- typekit -->
+	<script src="https://use.typekit.net/ibj0nlu.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="js/jquery-2.1.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/jquery-2.1.0.min.js"></script>
 	<script src="js/jquery.swipebox.js"></script>
 
 	<script type="text/javascript">
-	;( function( $ ) {
-
-		$( '.swipebox' ).swipebox();
-
-	} )( jQuery );
+		$( document ).ready(function() {
+			/* Basic Gallery */
+			$( '.swipebox' ).swipebox();	
+			/* Video */
+			$( '.swipebox-video' ).swipebox();
+     	});
 	</script>
 
-	<title>Kevin Heitczman</title>
+	<title>Website Title</title>
 	<Link rel="icon" type="image/png" href="favicon.png">
 	<meta name="keywords" content="kevin heitczman, photography, videographer, cinematographer">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
@@ -26,12 +26,17 @@
 	<link rel="stylesheet" href="stylesheets/screen.css">
 	<script src="js/masonry.js"></script>
 </head>
-
 <body>	
 	<div class="outer">
-		<div class="h1">Website Title</div>
+		<div class="h1">
+		  <a href="index.html">
+		    Website Title
+		  </a>
+		</div>
 		<nav class="nav">		
-		  <span class="selected"><a href="link1.html">Link 1</a></span>
+		  <a href="pictures.html" class="selected">Pictures</a>
+		  <a href="video.html">Videos</a>
+		  <a href="contact.html">Contact</a>
 		</nav>	
 		<div id="container">
 			<!-- images-start -->
@@ -78,8 +83,5 @@
 			<!-- images-end -->
 		</div>
 	</div>
-	<!-- typekit -->
-	<script src="https://use.typekit.net/ibj0nlu.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </body>
 </html>

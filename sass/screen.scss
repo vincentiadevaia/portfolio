@@ -32,19 +32,22 @@ body {
 }
 
 a:link {
-  color: #2786C1;
+  color: #22313F;
   opacity: 1;
   text-decoration: none;
 }
 a:visited {
+  color: #22313F;
   opacity: 1;
   text-decoration: none;
 }
 a:hover {
+  color: #22313F;
   opacity: 0.6;
   text-decoration: none;
 }
 a:active {
+  color: #22313F;
   opacity: 1;
   text-decoration: none;
 }
@@ -105,8 +108,10 @@ a.thumb:hover {
   display: inline;
   text-decoration: none;
   color: #333;
-  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-size: 15px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .nav a:hover {
@@ -115,9 +120,6 @@ a.thumb:hover {
 .nav a.active {
   text-decoration: none;
   color: #333;
-}
-.nav a:last-child {
-  padding-right: 0;
 }
 .outer {
   margin: 0 auto;
@@ -136,9 +138,8 @@ a.thumb:hover {
   }
 }	
 .selected {
-  border-bottom: 1px #22313F solid;
-  padding-bottom: 1px;
-  margin-right: 10px;
+  border-bottom: 2px #22313F solid;
+  padding-bottom: 2px;
 }
 .thumb {
   height:inherit !important;
