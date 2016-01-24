@@ -5,8 +5,14 @@
 
 @import "compass/reset";
 
+$tablet-width: 200px;
 $desktop-width: 720px;
 
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
@@ -170,8 +176,7 @@ a.thumb:hover {
   height: auto;
   float: left;
   // background: #666;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-bottom: 6px;
   overflow: hidden;
 }
