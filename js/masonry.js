@@ -11,10 +11,9 @@ $(document).ready(function () {
     $mason.masonry('layout');
   });
 
-  $("#container").fadeIn(3000);
-
-
+  $container.fadeIn(2000);
 });
+
 
 
 
