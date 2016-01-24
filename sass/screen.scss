@@ -1,0 +1,182 @@
+  /* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$tablet-width: 200px;
+$desktop-width: 720px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+$font-stack: "proxima-nova",sans-serif;
+$primary-color: #22313F;
+$text-align:left;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  text-align: $text-align;
+  background-color: #FFF;
+}
+
+a:link {
+  color: #2786C1;
+  opacity: 1;
+  text-decoration: none;
+}
+a:visited {
+  opacity: 1;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+a:active {
+  opacity: 1;
+  text-decoration: none;
+}
+a.thumb:link {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+a.thumb:hover {
+  opacity: 0.5;
+}
+.contact {
+  margin: 0 auto;
+  max-width: 660px;
+  text-align: left;
+}
+.gpoy {
+  margin-top: 14px;
+  width: 100%;
+}
+.h1 {
+  font-family: "acumin-pro",sans-serif;
+	font-size: 1.2em;
+	font-weight: 200; 
+	margin-bottom: 26px;
+  text-align: center;
+
+  	@include desktop {
+    font-size: 2em;
+  }
+}
+.h2 {
+	font-size: 1em;
+	font-weight: 400; 
+
+	@include desktop {
+    font-size: 1em;
+  }
+}
+.hero {
+  width: 88%;
+  margin-bottom: 20px;
+}
+.hidden {
+  display:none;
+}
+.links {
+  width: 80%;
+  margin-bottom: 40px;
+}
+.nav {
+  width: 100%;
+  text-align:center;
+  margin-bottom: 38px;
+}
+.nav a {
+  display: inline;
+  text-decoration: none;
+  color: #333;
+  padding-right: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.nav a:hover {
+  color: #444;
+}
+.nav a.active {
+  text-decoration: none;
+  color: #333;
+}
+.nav a:last-child {
+  padding-right: 0;
+}
+.outer {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+.p{
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.7em;
+	padding-bottom: 8px;
+
+  	@include desktop {
+    font-size: 1em;
+  }
+}	
+.selected {
+  border-bottom: 1px #22313F solid;
+  padding-bottom: 1px;
+  margin-right: 10px;
+}
+.thumb {
+  height:inherit !important;
+  width:326px !important;
+  max-width:none !important;
+}
+.video {
+  margin: 0 auto;
+  max-width: 660px;
+  text-align: left;
+}
+.video-item {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* ---- grid ---- */
+
+#container {
+  margin: 0 auto;
+  display: none;
+}
+
+/* clearfix */
+#container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.item {
+  width: 326px;
+  height: auto;
+  float: left;
+  // background: #666;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
